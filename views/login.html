@@ -1,0 +1,48 @@
+<html>
+	<head>
+		<title>Login</title>
+    	<script src="/javascripts/sha1.js"></script>
+    	<link rel="stylesheet" href="http://cdn.bootcss.com/bootstrap/3.3.0/css/bootstrap.min.css">
+		<link rel="stylesheet" href="http://cdn.bootcss.com/bootstrap/3.3.0/css/bootstrap-theme.min.css">
+		<script src="http://cdn.bootcss.com/jquery/1.11.1/jquery.min.js"></script>
+		<script src="http://cdn.bootcss.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+		<script src="/javascripts/login.js"></script>
+	</head>
+	<body>
+		<nav class="navbar navbar-inverse" role="navigation">
+			<div class="container-fluid">
+				<div class="collapse navbar-collapse">
+					<p class="navbar-right navbar-text ">
+						<a href="/account/register" class="navbar-link">Register</a>
+					</p>
+				</div>
+			</div>
+		</nav>
+		<div class="container">
+	      	<div class="starter-template">
+	      		<%- message %>
+	      		<form class="form-horizontal" id="form_login" name ="form_login" method="post"
+	      		 action="login">
+	      			
+	      			<div class="form-group">
+				    	<label for="user_id" class="col-sm-2 control-label">User ID</label>
+				    	<div class="col-sm-4">
+				      		<input type="email" name="user_id" class="form-control" id="user_id" placeholder="User ID">
+				    	</div>
+				  	</div>
+				  	<div class="form-group">
+					    <label for="password" class="col-sm-2 control-label">Password</label>
+					    	<div class="col-sm-4">
+					      		<input type="password" name="password" class="form-control" id="password" placeholder="Password">
+					    	</div>
+					</div>
+					<div class="form-group">
+					    <div class="col-sm-offset-2 col-sm-4">
+					      	<button class="btn btn-default" type="button" id="button_submit">Sign in</button>
+					    </div>
+					</div>
+	      		</form>
+	      	</div>
+	     </div>
+	</body>
+</html>
